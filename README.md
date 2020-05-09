@@ -1,3 +1,10 @@
+This project is a ***work in progress***. It is fully functional, but I intend to add more features in time, including:
+- Customizable times
+- Sounds
+- Stored daily sessions
+- Tracking
+- etc.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
