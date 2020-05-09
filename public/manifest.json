@@ -1,0 +1,9 @@
+{
+  "short_name": "Tom's Pom",
+  "name": "A simple pomodoro timer created by Tommy Meyer in ReactJS.",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
