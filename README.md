@@ -1,4 +1,5 @@
 This project is a ***work in progress***. It is fully functional, but I intend to add more features in time, including:
+- Smooth site animations
 - Customizable times
 - Sounds
 - Stored daily sessions
