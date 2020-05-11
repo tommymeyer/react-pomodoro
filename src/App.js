@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './App.css';
+import './App.sass';
 
 
 const padTime = (time) => {

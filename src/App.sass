@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap')
+
+*
+  box-sizing: border-box
+  transition: all 250ms ease
+
+html
+  font-size: 16px
+
+body
+  padding: 0
+  margin: 0
+  font-family: 'Major Mono Display', monospace
+  line-height: 1.5
+
+.app
+  min-height: 100vh
+  padding: 0 1.5em
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background: #a9a9a9
+  color: #2c888d
+
+h2
+  font-size: 1.5rem
+  color: #efefef
+  text-align: center
+  margin: 0 0 1em 0
+  @media screen and (min-width: 500px)
+    font-size: 2rem
+
+.timer
+  color: #90e9fb
+  font-size: 17vw
+  margin-bottom: 0.125em
+
+.buttons
+  button
+    outline: none
+    border: none
+    font-size: 1.5rem
+    background: #efefef
+    color: #ff3b3f
+    border-radius: 0.1667em
+    box-shadow: 0 0 0.1667em rgba(0, 0, 0, 0.1)
+    padding: 0.6667em 1.3334em
+    cursor: pointer
+    &:hover
+      border-radius: 0.3334em
+      background: #ff3b3f
+      box-shadow: 0 0 0.3334em rgba(0, 0, 0, 0.15)
+      color: #efefef
+      transform: translateY(-2px)
+    &:focus
+      box-shadow: 0 0 0 0.1667em #a9a9a9, 0 0 0 0.3334em black
+
+button + button
+  margin-left: 0.75em
