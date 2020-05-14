@@ -69,9 +69,9 @@ export default function App() {
       <div className="timer">
         <span>{count}</span>
         <span>/</span>
-        <span>{minutes}</span>
-        <span>:</span>
-        <span>{seconds}</span>
+        <input maxLength="2" type="text" placeholder={minutes} disabled />
+        <span className="colon">:</span>
+        <input maxLength="2" type="text" placeholder={seconds} disabled />
       </div>
 
       <div className="buttons">

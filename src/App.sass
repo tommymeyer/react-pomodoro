@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap')
 
+
+$dark-gray: #a9a9a9
+$not-white: #efefef
+$red: #ff3b3f
+$blue: #90e9fb
+
+
+
 *
   box-sizing: border-box
-  transition: all 250ms ease
+  transition: all 200ms ease-in-out
 
 html
   font-size: 16px
@@ -20,41 +28,75 @@ body
   flex-direction: column
   align-items: center
   justify-content: center
-  background: #a9a9a9
-  color: #2c888d
+  background: $dark-gray
+  color: $not-white
 
 h2
   font-size: 1.5rem
-  color: #efefef
+  color: $not-white
   text-align: center
-  margin: 0 0 1em 0
-  @media screen and (min-width: 500px)
+  @media screen and (min-width: 600px)
     font-size: 2rem
 
 .timer
-  color: #90e9fb
-  font-size: 17vw
-  margin-bottom: 0.125em
+  color: $blue
+  display: flex
+  font-size: 8vw
+  margin: 0.5em 0 0.75em
+  span, input
+    font-size: 16vw
+    text-shadow: 2px 2px 0px black
+    @media screen and ( min-width: 600px)
+      text-shadow: 3px 3px 0px black
+  span
+    &:not(.colon)
+      align-self: center
+      font-size: 8vw
+      font-weight: bold
+    &.colon
+      margin-top: -0.25em
+  input
+    background-color: $dark-gray
+    border: none
+    border-bottom: 8px solid transparent
+    color: $blue
+    cursor: pointer
+    font-family: 'Major Mono Display', monospace
+    font-weight: bold
+    padding: 0
+    width: 27vw
+    &:disabled
+      cursor: not-allowed
+    &::placeholder
+      opacity: 1
+    &::-webkit-input-placeholder
+      color: $blue
+      opacity: 1
+    &:focus
+      border: none
+      border-bottom: 8px solid $red
+      outline: none
+      &::placeholder
+        opacity: 0.5
+      &::-webkit-input-placeholder
+        opacity: 0.5
 
 .buttons
   button
     outline: none
     border: none
-    font-size: 3vw
-    background: #efefef
-    color: #ff3b3f
+    font-size: 4vw
+    background: $not-white
+    color: $red
     border-radius: 0.1667em
-    box-shadow: 0 0 0.1667em rgba(0, 0, 0, 0.1)
     padding: 0.6667em 1.3334em
     cursor: pointer
     &:hover
-      border-radius: 0.3334em
-      background: #ff3b3f
-      box-shadow: 0 0 0.3334em rgba(0, 0, 0, 0.15)
-      color: #efefef
-      transform: translateY(-2px)
+      background: $red
+      color: $not-white
     &:focus
-      box-shadow: 0 0 0 0.1667em #a9a9a9, 0 0 0 0.3334em black
+      box-shadow: 0 0 0 0.1667em $dark-gray, 0 0 0 0.3334em black
+    &:active
 
 button + button
-  margin-left: 0.75em
+  margin-left: 1.5em
